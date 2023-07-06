@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Galactic Empire Enlistment Center for Star Wars fans."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Galactic Empire</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/2/22/StormtrooperHelmetIcon.svg"
+    />
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+
+    <nav class="navbar">
+      <div><img class="logo" src="assets/icon-white.png" alt="logo" /></div>
+      <ul class="ul-navbar">
+        <li class="li-navbar"><a href="#" class="nav-link">Base</a></li>
+        <li class="li-navbar"><a href="#about" class="nav-link">About</a></li>
+        <li class="li-navbar"><a href="#enlist" class="nav-link">Enlist</a></li>
+      </ul>
+      <div class="hamburger">
+        <!-- <span class="bar"
+          ><img
+            src="assets/whitesaber1.png"
+            alt="white lightsaber"
+            style="height: 30px"
+        /></span> -->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- header -->
+
+    <header class="flex-container">
+      <h1><a href="#">Welcome to the Galactic Empire Enlistment Center</a></h1>
+      <p class="pheader">
+        <a href="#">Unleash Your Potential, Conquer the Cosmos!</a>
+      </p>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <article id="about">
+        <figure class="vader-container">
+          <picture>
+            <source
+              media="(max-width: 430px)"
+              srcset="assets/vader-small-responsive.png"
+            />
+            <img
+              class="vader-img"
+              src="assets/vader-small.png"
+              alt="darth vader"
+            />
+          </picture>
+          <div>
+            <p class="vader-speech">
+              "Embrace the power of the dark side, trooper. Unleash your
+              unwavering loyalty and strike fear into the hearts of our
+              enemies."
+            </p>
+            <br />
+            <p class="vader-speech">-Darth Vader</p>
+          </div>
+        </figure>
+        <figure id="image-track">
+          <img
+            src="assets/poster (3).jpeg"
+            alt="poster1"
+            class="image"
+            id="poster"
+          />
+          <img
+            src="assets/poster (2).jpeg"
+            alt="poster2"
+            class="image"
+            id="poster2"
+          />
+          <img
+            src="assets/poster (1).jpeg"
+            alt="poster3"
+            class="image"
+            id="main-poster"
+          />
+          <img
+            src="assets/poster (4).jpeg"
+            alt="poster4"
+            class="image"
+            id="poster4"
+          />
+          <img
+            src="assets/poster (5).jpeg"
+            alt="poster5"
+            class="image"
+            id="poster5"
+          />
+        </figure>
+        <article class="spotify-container">
+          <iframe
+            id="audio"
+            title="Galactic Empire March"
+            style="border-radius: 12px"
+            width="100%"
+            height="152"
+            src="https://open.spotify.com/embed/track/7a9UUo3zfID7Ik2fTQjRLi?utm_source=generator&theme=0"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            display="block"
+          ></iframe>
+        </article>
+        <article class="carousel-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img
+                id="slide-1"
+                src="assets/carousel (1).png"
+                alt="starwars scenery battleships"
+              />
+              <img
+                id="slide-2"
+                src="assets/carousel (2).jpg"
+                alt="starwars scenery battleship with planet behind it"
+              />
+              <img
+                id="slide-3"
+                src="assets/carousel (3).jpg"
+                alt="starwars scenery AT-AT with nature"
+              />
+              <img
+                id="slide-4"
+                src="assets/carousel (4).jpg"
+                alt="starwars scenery naboo planet"
+              />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+        </article>
+      </article>
+
+      <!-- form enlist -->
+
+      <section class="form-container" id="enlist">
+        <h2>Join Our Ranks Now !</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="full-name">Full Name:</label>
+              <input id="full-name" type="text" required />
+            </div>
+            <div>
+              <label for="birth">Date of Birth:</label>
+              <input id="birth" type="date" required />
+            </div>
+            <div>
+              <label for="species">Species:</label>
+              <select name="species" id="species" required>
+                <option value="Human">Human</option>
+                <option value="Wookiee">Wookiee</option>
+                <option value="Hutt">Hutt</option>
+                <option value="Ewok">Ewok</option>
+                <option value="Jawa">Jawa</option>
+                <option value="Tusken">Tusken</option>
+                <option value="Mandalorian">Mandalorian</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Administrative Information:</legend>
+            <div>
+              <label id="reason"
+                ><b>Why do You Seek to Join Our Ranks?</b></label
+              >
+              <textarea id="reason" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+              <div>
+                <label id="resume"><b>Input Your Resume</b></label>
+                <br />
+                <input
+                  type="file"
+                  id="resume"
+                  name="myresume"
+                  required
+                  accept=".pdf, .DOCTYPE"
+                />
+              </div>
+              <div>
+                <p><b>Oath of Allegiance</b></p>
+                <div class="oath">
+                  <input
+                    id="oath"
+                    type="checkbox"
+                    name="oath"
+                    value="sworn"
+                    required
+                  />
+                  <label id="sworn" class="sworn" for="sworn"
+                    >I pledge my unwavering loyalty to the Galactic Empire, To
+                    uphold its principles and defend its sovereignty, I vow to
+                    serve with honor, courage, and unwavering commitment, To
+                    bring order, stability, and security to the galaxy, I
+                    embrace the power of the dark side, guided by the Sith, To
+                    enforce the will of the Emperor and protect our glorious
+                    empire, Through discipline, unity, and unwavering resolve, I
+                    pledge my life to the Galactic Empire, for the greater good
+                    of all.</label
+                  >
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit">Enlist.</button>
+        </form>
+      </section>
+      <section class="starwars-animation">
+        <img
+          src="//cssanimation.rocks/demo/starwars/images/star.svg"
+          alt="Star"
+          class="star"
+        />
+        <img
+          src="//cssanimation.rocks/demo/starwars/images/wars.svg"
+          alt="Wars"
+          class="wars"
+        />
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p class="p-footer">Copyright © 2023</p>
+      <img class="logo" src="assets/icon-white.png" alt="logo" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
