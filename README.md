@@ -1,5 +1,3 @@
-Certainly! Here's a markdown guide on how to deploy a website with Netlify, starting from signing up for Netlify and ending with buying a domain from Niagahoster:
-
 ## Deploying a Website with Netlify and Buying a Domain from Niagahoster
 
 ### Step 1: Sign up for Netlify
