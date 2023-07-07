@@ -92,3 +92,8 @@
 ### Step 8: Wait for DNS Propagation
 
 After updating the DNS settings, it may take some time for the changes to propagate across the internet. DNS propagation can vary and may take up to 24-48 hours, although it often happens much faster.
+
+### You Can Visit the Finished Product Here
+- [**https://thedroidyourelookingfor.site**](https://thedroidyourelookingfor.site)
+- [**www.thedroidyourelookingfor.site**](www.thedroidyourelookingfor.site)
+- [**https://rayhanzou-week4-assignment.netlify.app**](https://rayhanzou-week4-assignment.netlify.app)
