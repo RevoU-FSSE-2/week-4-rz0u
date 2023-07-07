@@ -1,16 +1,16 @@
 @font-face {
   font-family: "roboto";
-  src: url(assets/fonts/RobotoCondensed-Regular.ttf);
+  src: url(Assets-Site/fonts/RobotoCondensed-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "roboto";
-  src: url(assets/fonts/RobotoCondensed-Bold.ttf);
+  src: url(Assets-Site/fonts/RobotoCondensed-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "roboto";
-  src: url(assets/fonts/RobotoCondensed-Italic.ttf);
+  src: url(Assets-Site/fonts/RobotoCondensed-Italic.ttf);
   font-weight: 400;
   font-style: italic;
 }
@@ -30,7 +30,7 @@ html {
   color: #edf0f1;
 }
 body {
-  background-image: url(assets/bgwall.jpg);
+  background-image: url(Assets-Site/bgwall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
