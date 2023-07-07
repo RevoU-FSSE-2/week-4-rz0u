@@ -95,5 +95,5 @@ After updating the DNS settings, it may take some time for the changes to propag
 
 ### You Can Visit the Finished Product Here
 - [**https://thedroidyourelookingfor.site**](https://thedroidyourelookingfor.site)
-- [**www.thedroidyourelookingfor.site**](www.thedroidyourelookingfor.site)
+- [**www.thedroidyourelookingfor.site**](https://www.thedroidyourelookingfor.site)
 - [**https://rayhanzou-week4-assignment.netlify.app**](https://rayhanzou-week4-assignment.netlify.app)
