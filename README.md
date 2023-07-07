@@ -2,7 +2,9 @@
 
 ### Step 1: Sign up for Netlify
 
-1. Visit the Netlify website
+![Signing Up To Netlify](Assets-Documentation/sign-up-netlify.png)
+
+1. Visit the [Netlify](www.netlify.com) website
 2. Click on "Sign Up"
 3. Choose a Sign-up Method
 - If signing up with a third-party account:
@@ -26,6 +28,8 @@
 
 ### Step 2: Create a New Site
 
+![New Website to Deploy](Assets-Documentation/new-website.png)
+
 1. After signing in to Netlify, click on the "New site from Git" button on the Netlify dashboard.
 2. Choose your preferred Git platform (GitHub, GitLab, or Bitbucket) or select "Continuous Deployment" if you prefer another Git provider or a local repository.
 3. Authenticate and authorize Netlify to access your Git repository.
@@ -33,7 +37,20 @@
 5. Configure the basic settings for your site, such as the branch to deploy, build command, and publish directory.
 6. Click on the "Deploy site" button to initiate the deployment process.
 
-### Step 3: Configure Custom Domain
+### Step 3: Buy a Domain from Niagahoster
+
+![Checking and Buying Domain from Niagahoster](Assets-Documentation/niagahoster-domain.png)
+
+1. Visit the [Niagahoster](https://www.niagahoster.co.id/) website.
+2. Use the domain search feature on the Niagahoster homepage to check the availability of your desired domain name.
+3. Once you find an available domain, select it and proceed to the domain registration page.
+4. Follow the steps to complete the domain registration process, providing the necessary details such as your personal information and contact details.
+5. During the checkout process, select the desired domain registration period and any additional services you may need.
+6. Proceed to make the payment to finalize the domain purchase.
+
+### Step 4: Configure Custom Domain
+
+![Adding Custom Domain](Assets-Documentation/add-domain-name.png)
 
 1. Once your site is deployed, navigate to the Netlify dashboard.
 2. Select your site from the list of deployed sites.
@@ -42,29 +59,36 @@
 5. Enter the desired domain name you want to use (e.g., `www.example.com`) and click on "Verify."
 6. Netlify will provide you with DNS configuration instructions. Keep this information handy as you'll need it in the next step.
 
-### Step 4: Buy a Domain from Niagahoster
+### Step 5: Sign up for Cloudflare and Add Your Domain
 
-1. Visit the Niagahoster website at [https://www.niagahoster.co.id/](https://www.niagahoster.co.id/).
-2. Use the domain search feature on the Niagahoster homepage to check the availability of your desired domain name.
-3. Once you find an available domain, select it and proceed to the domain registration page.
-4. Follow the steps to complete the domain registration process, providing the necessary details such as your personal information and contact details.
-5. During the checkout process, select the desired domain registration period and any additional services you may need.
-6. Proceed to make the payment to finalize the domain purchase.
+![Getting Cloudfare nameserver's](Assets-Documentation/cloudfare-nameservers.png)
 
-### Step 5: Configure DNS Settings in Niagahoster
+1. Visit the [Cloudflare](https://www.cloudflare.com/) website.
+2. Click on the "Sign Up" button to create a Cloudflare account.
+3. Follow the prompts to add your website/domain to Cloudflare.
+4. Cloudflare will scan your DNS records. Ensure that the records match the ones provided by Netlify in Step 3.
+5. Once the scan is complete, Cloudflare will provide you with new nameservers for your domain.
 
-1. After completing the domain purchase, log in to your Niagahoster account.
-2. Locate the domain management section and access the DNS management settings.
-3. Follow the instructions provided by Netlify (from Step 3) to configure the DNS settings for your custom domain.
-4. Typically, you'll need to add a CNAME or ANAME record pointing to the Netlify domain (e.g., `example.netlify.app`) and possibly configure other DNS records like MX, TXT, or SPF if needed.
-5. Save the changes to update the DNS configuration.
+### Step 6: Update Nameservers in Niagahoster
 
-### Step 6: Wait for DNS Propagation
+![Niagahoster's nameservers Change](Assets-Documentation/update-nameservers.png)
+
+1. Log in to your Niagahoster account.
+2. Locate the domain management section and access the nameserver settings.
+3. Replace the existing nameservers with the new nameservers provided by Cloudflare.
+4. Save the changes. This update may take some time to propagate across the internet.
+
+### Step 7: Set Up Cloudflare DNS Settings
+
+![Setting Up DNS](Assets-Documentation/dns-records.png)
+
+1. Go back to the Cloudflare dashboard.
+2. In Cloudflare, select your website/domain from the list of added sites.
+3. Navigate to the DNS settings.
+4. Verify that the DNS records match the ones provided by Netlify in Step 3.
+5. If any records are missing, add them accordingly.
+6. Save the DNS settings.
+
+### Step 8: Wait for DNS Propagation
 
 After updating the DNS settings, it may take some time for the changes to propagate across the internet. DNS propagation can vary and may take up to 24-48 hours, although it often happens much faster.
-
-### Step 7: Verify Custom Domain in Netlify
-
-1. Once DNS propagation is complete, go back to the Netlify dashboard and navigate to your site's domain settings.
-2. Click on "Verify DNS configuration" or similar options to check if the DNS configuration is successfully set up.
-3. Netlify will verify the domain configuration
